@@ -21,13 +21,28 @@ img {
     height: auto;
 }
 
-.container {
-    max-width: 1300px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
 body {
     overflow-x: hidden;
+    background-color: $color-blue;
 }
+
+.wrapper {
+    max-width: calc(100% - 100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template: minmax(80px, auto) 1fr minmax(40px, auto) / 1fr;
+    grid-template-areas: 
+                        "header"
+                        "main"
+                        "footer";
+
+    @media screen and (max-width: 1400px) {
+        max-width: calc(100% - 60px);
+    }
+
+    @include respond-to(desktop) {
+        max-width: calc(100% - 50px); 
+    }
+}
+
 

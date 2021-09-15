@@ -1,0 +1,7 @@
+.main {
+    grid-area: main;
+    padding: 10px 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 1fr;
+}

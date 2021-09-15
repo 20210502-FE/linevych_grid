@@ -1,0 +1,14 @@
+.footer {
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+
+    &__text {
+        font-family: $font, sans-sarif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: $color-yellow;
+    }
+}
